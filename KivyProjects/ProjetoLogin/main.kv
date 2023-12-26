@@ -1,0 +1,20 @@
+BoxLayout:
+    orientation: 'vertical'
+    Label:
+        text: "Bem-vindo ao Meu App"
+    TextInput:
+        id: username_input
+        hint_text: "Nome de usuário"
+    TextInput:
+        id: email_input
+        hint_text: "Email"
+    TextInput:
+        id: password_input
+        hint_text: "Senha"
+        password: True
+    Button:
+        text: "Login"
+        on_press: app.login(self)
+    Button:
+        text: "Criar Conta"
+        on_press: app.create_account(self)
