@@ -3,10 +3,9 @@ from selenium.webdriver.common.by import By
 import openpyxl
 
 driver = webdriver.Chrome()
-driver.get("https://www.terabyteshop.com.br")
-
-titulos = driver.find_elements(By.XPATH, "//a[@class='prod-name']")
-precos = driver.find_elements(By.XPATH, "//div[@class='prod-new-price']")
+driver.get("https://www.terabyteshop.com.br") # Site a ser aberto
+titulos = driver.find_elements(By.XPATH, "//a[@class='prod-name']") # seleciona a classe da página
+precos = driver.find_elements(By.XPATH, "//div[@class='prod-new-price']") # seleciona o produto
 #cria a planilha
 Workbook = openpyxl.Workbook()
 #cria a pagina produtos
